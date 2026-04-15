@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000; min-height: 14.0px}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;html lang="en"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;meta charset="UTF-8" /&gt;</span></p>
+<p class="p1"><span class="s1">&lt;title&gt;Photo Ambient — Visual Studio&lt;/title&gt;</span></p>
+<p class="p1"><span class="s1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;style&gt;</span></p>
+<p class="p1"><span class="s1">:root {</span></p>
+<p class="p1"><span class="s1">  --bg: #fafafa;</span></p>
+<p class="p1"><span class="s1">  --text: #111;</span></p>
+<p class="p1"><span class="s1">  --muted: #666;</span></p>
+<p class="p1"><span class="s1">  --line: #e5e5e5;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">* { box-sizing: border-box; }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">body {</span></p>
+<p class="p1"><span class="s1">  margin: 0;</span></p>
+<p class="p1"><span class="s1">  background: var(--bg);</span></p>
+<p class="p1"><span class="s1">  color: var(--text);</span></p>
+<p class="p1"><span class="s1">  font-family: Inter, sans-serif;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">header {</span></p>
+<p class="p1"><span class="s1">  padding: 32px 64px;</span></p>
+<p class="p1"><span class="s1">  display: flex;</span></p>
+<p class="p1"><span class="s1">  justify-content: space-between;</span></p>
+<p class="p1"><span class="s1">  align-items: center;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.logo {</span></p>
+<p class="p1"><span class="s1">  font-weight: 600;</span></p>
+<p class="p1"><span class="s1">  letter-spacing: 0.2em;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">nav a {</span></p>
+<p class="p1"><span class="s1">  margin-left: 32px;</span></p>
+<p class="p1"><span class="s1">  text-decoration: none;</span></p>
+<p class="p1"><span class="s1">  color: var(--text);</span></p>
+<p class="p1"><span class="s1">  font-size: 14px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.hero {</span></p>
+<p class="p1"><span class="s1">  display: grid;</span></p>
+<p class="p1"><span class="s1">  grid-template-columns: 1.2fr 1fr;</span></p>
+<p class="p1"><span class="s1">  min-height: 80vh;</span></p>
+<p class="p1"><span class="s1">  border-top: 1px solid var(--line);</span></p>
+<p class="p1"><span class="s1">  border-bottom: 1px solid var(--line);</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.hero-text {</span></p>
+<p class="p1"><span class="s1">  padding: 96px 64px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.hero-text h1 {</span></p>
+<p class="p1"><span class="s1">  font-family: "Playfair Display", serif;</span></p>
+<p class="p1"><span class="s1">  font-size: 64px;</span></p>
+<p class="p1"><span class="s1">  line-height: 1.05;</span></p>
+<p class="p1"><span class="s1">  margin: 0 0 24px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.hero-text p {</span></p>
+<p class="p1"><span class="s1">  max-width: 420px;</span></p>
+<p class="p1"><span class="s1">  font-size: 16px;</span></p>
+<p class="p1"><span class="s1">  color: var(--muted);</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.hero-image {</span></p>
+<p class="p1"><span class="s1">  background: linear-gradient(135deg, #ddd, #bbb);</span></p>
+<p class="p1"><span class="s1">  display: flex;</span></p>
+<p class="p1"><span class="s1">  align-items: center;</span></p>
+<p class="p1"><span class="s1">  justify-content: center;</span></p>
+<p class="p1"><span class="s1">  font-size: 14px;</span></p>
+<p class="p1"><span class="s1">  color: #555;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.section {</span></p>
+<p class="p1"><span class="s1">  padding: 96px 64px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.section h2 {</span></p>
+<p class="p1"><span class="s1">  font-family: "Playfair Display", serif;</span></p>
+<p class="p1"><span class="s1">  font-size: 40px;</span></p>
+<p class="p1"><span class="s1">  margin-bottom: 32px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.services {</span></p>
+<p class="p1"><span class="s1">  display: grid;</span></p>
+<p class="p1"><span class="s1">  grid-template-columns: repeat(3, 1fr);</span></p>
+<p class="p1"><span class="s1">  gap: 32px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.service {</span></p>
+<p class="p1"><span class="s1">  border-top: 1px solid var(--line);</span></p>
+<p class="p1"><span class="s1">  padding-top: 16px;</span></p>
+<p class="p1"><span class="s1">  font-size: 15px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.gallery {</span></p>
+<p class="p1"><span class="s1">  display: grid;</span></p>
+<p class="p1"><span class="s1">  grid-template-columns: repeat(4, 1fr);</span></p>
+<p class="p1"><span class="s1">  gap: 16px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.gallery div {</span></p>
+<p class="p1"><span class="s1">  aspect-ratio: 1 / 1;</span></p>
+<p class="p1"><span class="s1">  background: #ddd;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.about {</span></p>
+<p class="p1"><span class="s1">  max-width: 700px;</span></p>
+<p class="p1"><span class="s1">  font-size: 16px;</span></p>
+<p class="p1"><span class="s1">  color: var(--muted);</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">footer {</span></p>
+<p class="p1"><span class="s1">  border-top: 1px solid var(--line);</span></p>
+<p class="p1"><span class="s1">  padding: 48px 64px;</span></p>
+<p class="p1"><span class="s1">  display: flex;</span></p>
+<p class="p1"><span class="s1">  justify-content: space-between;</span></p>
+<p class="p1"><span class="s1">  font-size: 14px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">@media (max-width: 900px) {</span></p>
+<p class="p1"><span class="s1">  .hero {</span></p>
+<p class="p1"><span class="s1">    grid-template-columns: 1fr;</span></p>
+<p class="p1"><span class="s1">  }</span></p>
+<p class="p1"><span class="s1">  .services {</span></p>
+<p class="p1"><span class="s1">    grid-template-columns: 1fr;</span></p>
+<p class="p1"><span class="s1">  }</span></p>
+<p class="p1"><span class="s1">  .gallery {</span></p>
+<p class="p1"><span class="s1">    grid-template-columns: repeat(2, 1fr);</span></p>
+<p class="p1"><span class="s1">  }</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1">&lt;/style&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;body&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;header&gt;</span></p>
+<p class="p1"><span class="s1">  &lt;div class="logo"&gt;PHOTO AMBIENT&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">  &lt;nav&gt;</span></p>
+<p class="p1"><span class="s1">    &lt;a href="#work"&gt;Work&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1">    &lt;a href="#services"&gt;Services&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1">    &lt;a href="#about"&gt;About&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1">    &lt;a href="#contact"&gt;Contact&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1">  &lt;/nav&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/header&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;section class="hero"&gt;</span></p>
+<p class="p1"><span class="s1">  &lt;div class="hero-text"&gt;</span></p>
+<p class="p1"><span class="s1">    &lt;h1&gt;Visual&lt;br&gt;Production&lt;br&gt;Studio&lt;/h1&gt;</span></p>
+<p class="p1"><span class="s1">    &lt;p&gt;</span></p>
+<p class="p1"><span class="s1">      Photo Ambient is a multidisciplinary visual studio working across photography,</span></p>
+<p class="p1"><span class="s1">      film, branding and digital content — adaptable by nature.</span></p>
+<p class="p1"><span class="s1">    &lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">  &lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">  &lt;div class="hero-image"&gt;</span></p>
+<p class="p1"><span class="s1">    Hero image (chameleon / visual placeholder)</span></p>
+<p class="p1"><span class="s1">  &lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;section id="services" class="section"&gt;</span></p>
+<p class="p1"><span class="s1">  &lt;h2&gt;Services&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1">  &lt;div class="services"&gt;</span></p>
+<p class="p1"><span class="s1">    &lt;div class="service"&gt;Photography — editorial, commercial, lifestyle&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">    &lt;div class="service"&gt;Video &amp; motion — brand films, reels&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">    &lt;div class="service"&gt;Visual identity — content &amp; direction&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">  &lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;section id="work" class="section"&gt;</span></p>
+<p class="p1"><span class="s1">  &lt;h2&gt;Selected Work&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1">  &lt;div class="gallery"&gt;</span></p>
+<p class="p1"><span class="s1">    &lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">    &lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">  &lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;section id="about" class="section"&gt;</span></p>
+<p class="p1"><span class="s1">  &lt;h2&gt;About&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1">  &lt;div class="about"&gt;</span></p>
+<p class="p1"><span class="s1">    We operate as a visual company — not a single author.</span></p>
+<p class="p1"><span class="s1">    Our strength lies in adaptation, aesthetics and execution across different formats,</span></p>
+<p class="p1"><span class="s1">    industries and cultures.</span></p>
+<p class="p1"><span class="s1">  &lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;footer id="contact"&gt;</span></p>
+<p class="p1"><span class="s1">  &lt;div&gt;© Photo Ambient&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">  &lt;div&gt;contact@photoambient.com&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/footer&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+<p class="p1"><span class="s1">``</span></p>
+</body>
+</html>
